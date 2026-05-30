@@ -1,19 +1,19 @@
 import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 
 /**
- * Comment — a comment is anything that expresses an opinion, observation, explanation, etc.
+ * Answer — an answer is anything that responds to a question, request, action, etc.
  *
  * Headless Angular component. Renders the semantic HTML root with the
- * kebab-case class hook `comment` and the consumer-provided `className`.
+ * kebab-case class hook `answer` and the consumer-provided `className`.
  * Ships zero CSS; the consumer styles via the class hook.
  */
 @Component({
-  selector: "lily-comment",
+  selector: "lily-answer",
   standalone: true,
-  template: `<div class="comment {{ className() }}" [attr.aria-label]="label() || null"><ng-content /></div>`,
+  template: `<div class="answer {{ className() }}" [attr.aria-label]="label() || null"><ng-content /></div>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Comment {
+export class Answer {
   readonly label = input<string>("");
   readonly className = input<string>("");
 }
