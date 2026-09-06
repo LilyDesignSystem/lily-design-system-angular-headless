@@ -1,19 +1,19 @@
 import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 
 /**
- * IrelandIndividualHealthIdentifierView — a read-only display of Ireland Individual Health Identifier (IHI) unique national healthcare identifier
+ * TuaisceartEireannHealthAndCareNumberView — a read-only display of Tuaisceart Eireann Health and Care (H&C) Number unique national healthcare identifier
  *
  * Headless Angular component. Renders the semantic HTML root with the
- * kebab-case class hook `ireland-individual-health-identifier-view` and the consumer-provided `className`.
+ * kebab-case class hook `tuaisceart-eireann-health-and-care-number-view` and the consumer-provided `className`.
  * Ships zero CSS; the consumer styles via the class hook.
  */
 @Component({
-  selector: "lily-ireland-individual-health-identifier-view",
+  selector: "lily-tuaisceart-eireann-health-and-care-number-view",
   standalone: true,
-  template: `<span class="ireland-individual-health-identifier-view {{ className() }}" role="text" [attr.aria-label]="label() || null">{{ value() }}</span>`,
+  template: `<span class="tuaisceart-eireann-health-and-care-number-view {{ className() }}" role="text" [attr.aria-label]="label() || null">{{ value() }}</span>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class IrelandIndividualHealthIdentifierView {
+export class TuaisceartEireannHealthAndCareNumberView {
   /** Optional accessible label override (aria-label). */
   readonly label = input<string>("");
   /** Extra CSS classes appended to the base class. */

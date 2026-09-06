@@ -1,17 +1,17 @@
 import { ChangeDetectionStrategy, Component, input, model } from "@angular/core";
 
 /**
- * NorthernIrelandHealthAndCareNumberInput — an input for entering Northern Ireland Health and Care (H&C) Number unique national healthcare identifier
+ * EireIndividualHealthIdentifierInput — an input for entering Eire Individual Health Identifier (IHI) unique national healthcare identifier
  *
  * Headless Angular component. Renders the semantic HTML root with the
- * kebab-case class hook `northern-ireland-health-and-care-number-input` and the consumer-provided `className`.
+ * kebab-case class hook `eire-individual-health-identifier-input` and the consumer-provided `className`.
  * Ships zero CSS; the consumer styles via the class hook.
  */
 @Component({
-  selector: "lily-northern-ireland-health-and-care-number-input",
+  selector: "lily-eire-individual-health-identifier-input",
   standalone: true,
   template: `<input
-      class="northern-ireland-health-and-care-number-input {{ className() }}"
+      class="eire-individual-health-identifier-input {{ className() }}"
       type="text"
       [attr.aria-label]="label() || null"
       autocomplete="off"
@@ -22,7 +22,7 @@ import { ChangeDetectionStrategy, Component, input, model } from "@angular/core"
     />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NorthernIrelandHealthAndCareNumberInput {
+export class EireIndividualHealthIdentifierInput {
   /** Accessible label, applied to aria-label. */
   readonly label = input<string>("");
   /** Extra CSS classes appended to the base class. */

@@ -1,19 +1,19 @@
 import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 
 /**
- * CyprusNationalPassportNumberView — a read-only display of Cyprus's National Passport Number
+ * EireIndividualHealthIdentifierView — a read-only display of Eire Individual Health Identifier (IHI) unique national healthcare identifier
  *
  * Headless Angular component. Renders the semantic HTML root with the
- * kebab-case class hook `cyprus-national-passport-number-view` and the consumer-provided `className`.
+ * kebab-case class hook `eire-individual-health-identifier-view` and the consumer-provided `className`.
  * Ships zero CSS; the consumer styles via the class hook.
  */
 @Component({
-  selector: "lily-cyprus-national-passport-number-view",
+  selector: "lily-eire-individual-health-identifier-view",
   standalone: true,
-  template: `<span class="cyprus-national-passport-number-view {{ className() }}" role="text" [attr.aria-label]="label() || null">{{ value() }}</span>`,
+  template: `<span class="eire-individual-health-identifier-view {{ className() }}" role="text" [attr.aria-label]="label() || null">{{ value() }}</span>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CyprusNationalPassportNumberView {
+export class EireIndividualHealthIdentifierView {
   /** Optional accessible label override (aria-label). */
   readonly label = input<string>("");
   /** Extra CSS classes appended to the base class. */

@@ -1,17 +1,17 @@
 import { ChangeDetectionStrategy, Component, input, model } from "@angular/core";
 
 /**
- * CyprusNationalPassportNumberInput — an input for entering Cyprus's National Passport Number
+ * TuaisceartEireannHealthAndCareNumberInput — an input for entering Tuaisceart Eireann Health and Care (H&C) Number unique national healthcare identifier
  *
  * Headless Angular component. Renders the semantic HTML root with the
- * kebab-case class hook `cyprus-national-passport-number-input` and the consumer-provided `className`.
+ * kebab-case class hook `tuaisceart-eireann-health-and-care-number-input` and the consumer-provided `className`.
  * Ships zero CSS; the consumer styles via the class hook.
  */
 @Component({
-  selector: "lily-cyprus-national-passport-number-input",
+  selector: "lily-tuaisceart-eireann-health-and-care-number-input",
   standalone: true,
   template: `<input
-      class="cyprus-national-passport-number-input {{ className() }}"
+      class="tuaisceart-eireann-health-and-care-number-input {{ className() }}"
       type="text"
       [attr.aria-label]="label() || null"
       autocomplete="off"
@@ -22,7 +22,7 @@ import { ChangeDetectionStrategy, Component, input, model } from "@angular/core"
     />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CyprusNationalPassportNumberInput {
+export class TuaisceartEireannHealthAndCareNumberInput {
   /** Accessible label, applied to aria-label. */
   readonly label = input<string>("");
   /** Extra CSS classes appended to the base class. */
